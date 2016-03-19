@@ -1,6 +1,6 @@
-var app = angular.module('jNews', ['ui.router']);
+angular.module('jNews', ['ui.router'])
 
-app.config([
+.config([
 '$stateProvider',
 '$urlRouterProvider',
 function($stateProvider, $urlRouterProvider) {
@@ -10,9 +10,8 @@ function($stateProvider, $urlRouterProvider) {
       url: '/home',
       templateUrl: '/home.html',
       controller: 'MainCtrl'
-    });
+    })
 
-  $stateProvider
     .state('posts', {
       url: '/posts/{id}',
       templateUrl: '/posts.html',
@@ -20,24 +19,24 @@ function($stateProvider, $urlRouterProvider) {
     });
 
   $urlRouterProvider.otherwise('home');
-}]);
+}])
 
-app.factory('posts', [function(){
+.factory('posts', [function(){
   var o = {
     posts: []
   };
   return o;
-}]);
+}])
 
-app.controller('PostsCtrl', [
+.controller('PostsCtrl', [
 '$scope',
 '$stateParams',
 'posts',
 function($scope, $stateParams, posts){
+  $scope.post = posts.posts[$stateParams.id];
+}])
 
-}]);
-
-app.controller('MainCtrl', [
+.controller('MainCtrl', [
 '$scope',
 'posts',
 
