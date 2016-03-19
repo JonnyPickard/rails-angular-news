@@ -57,10 +57,13 @@
           <span ng-hide="post.link">
             {{post.title}}
           </span>
+          <span>
+            <a href="#/home">Home</a>
+          </span>
         </h3>
       </div>
 
-      <div ng-repeat="comment in post.comments | orderBy:'-upvotes'"
+      <div ng-repeat="comment in post.comments | orderBy:'-upvotes'">
         <span class="glyphicon glyphicon-thumbs-up"
         ng-click="incrementUpvotes(comment)"></span>
         {{comment.upvotes}} - by {{comment.author}}
