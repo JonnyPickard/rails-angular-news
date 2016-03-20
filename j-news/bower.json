@@ -1,0 +1,23 @@
+{
+  "name": "j-news",
+  "homepage": "https://github.com/JonnyPickard/rails-angular-news",
+  "authors": [
+    "Jonathan Pickard <Jonathandpickard@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.2",
+    "angular-ui-router": "^0.2.18",
+    "bootstrap": "^3.3.6"
+  }
+}
