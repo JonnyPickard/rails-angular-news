@@ -30,13 +30,13 @@ function($stateProvider, $urlRouterProvider) {
 
     .state('login', {
       url: '/login',
-      templateUrl: 'login.html',
+      templateUrl: '/login.html',
       controller: 'AuthCtrl'
     })
 
     .state('register', {
       url: '/register',
-      templateUrl: 'register.html',
+      templateUrl: '/register.html',
       controller: 'AuthCtrl'
     });
 
