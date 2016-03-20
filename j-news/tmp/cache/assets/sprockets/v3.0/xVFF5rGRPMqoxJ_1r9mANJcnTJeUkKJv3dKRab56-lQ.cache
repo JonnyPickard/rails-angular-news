@@ -1,37 +1,0 @@
-{:uriI"ƒfile://app/assets/javascripts/home/_home.html?type=text/ng-html&id=6ab7082ef922a078a44856562473b8c61c93b60ffb0aee8cca2991c386c3dd22:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/home/_home.html;T:	nameI"home/_home;T:logical_pathI"home/_home.html;T:content_typeI"text/ng-html;T:sourceI"z<script type="text/ng-template" id="home/_home.html">
-  <div class="page-header">
-    <h1>J News</h1>
-  </div>
-  <div ng-repeat="post in posts | orderBy:'-upvotes'">
-    <span class="glyphicon glyphicon-thumbs-up"
-    ng-click="incrementUpvotes(post)"></span>
-    {{post.upvotes}}
-    <span style="font-size:20px; margin-left:10px;">
-      <a ng-show='post.link' href="{{post.link}}">
-        {{post.title}}
-      </a>
-      <span ng-hide="post.link">
-        {{post.title}}
-      </span>
-      <span>
-        <a href="#/posts/{{$index}}">Comments</a>
-      </span>
-    </span>
-  </div>
-
-  <form ng-submit="addPost()"
-    style="margin-top:30px;">
-    <h3>Add a new post</h3>
-    <input type="text" placeholder="Title" ng-model="title"></input>
-    <br>
-    <input type="text" placeholder="Link" ng-model="link"></input>
-    <br>
-    <button type="submit">Post</button>
-  </form>
-</script>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"9file-digest://app/assets/javascripts/home/_home.html;TTF:charsetI"
-utf-8;F:digest"%DàD_€òKoe†ü
-Ø`,ï^…½ØÅhm@‘“(ù:lengthiz:dependencies_digest"%á˜^áÿ‡;4u›Ž÷”Ô0±šCèyÓÄÍn·*êö^:idI"E6ab7082ef922a078a44856562473b8c61c93b60ffb0aee8cca2991c386c3dd22;F:
-mtimel+û¨íV
