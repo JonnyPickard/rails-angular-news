@@ -1,4 +1,4 @@
 //= require angular
-//= require angular-devise
+//= require AngularDevise
 //= require angular-ui-router
 //= require_tree .
