@@ -1,4 +1,4 @@
-angular.module('jNews', ['ui.router'])
+angular.module('jNews', ['ui.router', 'Devise'])
 
 .config([
 '$stateProvider',
